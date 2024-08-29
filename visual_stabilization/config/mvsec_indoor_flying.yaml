@@ -1,0 +1,13 @@
+image_width: 346
+image_height: 260
+K:  [226.38018519795807, 0.0, 173.6470807871759, 0.0, 226.15002947047415, 133.73271487507847, 0.0, 0.0, 1.0]
+D:  [-0.048031442223833355, 0.011330957517194437, -0.055378166304281135, 0.021500973881459395, 0.0]
+fisheye_distortion: True
+
+topic_event_param: /davis/left/events
+topic_image_param: /davis/left/image_raw
+topic_imu_param: /davis/left/imu
+topic_external_pose_param: /davis/left/pose
+get_orientation_from_imu: False
+use_external_extrinsic_rotation: False
+

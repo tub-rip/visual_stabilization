@@ -1,0 +1,32 @@
+<launch>
+  <node name="event_stabilization_node" pkg="visual_stabilization" type="event_stabilization_node" output="screen">
+
+    <!-- Remap  -->
+    <remap from="undistorted_event_image" to="/visual_stabilization/event_image" />
+    <remap from="stabilized_event_image" to="/visual_stabilization/stabilized_event_image" />
+    <remap from="extended_stabilized_event_image" to="/visual_stabilization/extended_stabilized_event_image" />
+
+    <!-- Visualization parameters  -->
+    <param name="accumulation_type" value="area"/>
+    <param name="accumulation_time" value="0.025"/>
+    <param name="number_of_accumulated_events" value="30000"/>
+    <param name="roi_threshold" value="250"/>
+    <param name="number_of_columns" value="34"/>
+    <param name="number_of_rows" value="26"/>
+
+    <!--  General configuration  -->
+    <param name="enable_undistortion" value="True" />
+    <param name="enable_saccades" value="True" />
+    <param name="canvas_gain" value="2.0" />
+    <param name="record_bag" value="False"/>
+    <param name="file_name" value="$(find visual_stabilization)/event_stabilization_sample.bag"/>
+
+    <!--  Dataset configuration  -->
+    <rosparam file="$(find visual_stabilization)/config/ecd_dataset_mocap.yaml" />
+    <!-- <rosparam file="$(find visual_stabilization)/config/mvsec_indoor_flying.yaml" /> -->
+    <!-- <rosparam file="$(find visual_stabilization)/config/vector_davis.yaml" /> -->
+
+  </node>
+  
+  <node name="rqt_gui" pkg="rqt_gui" type="rqt_gui" args="--perspective-file $(find visual_stabilization)/rqt/visual_stabilization_events.perspective" />
+</launch>

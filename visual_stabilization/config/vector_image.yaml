@@ -1,0 +1,13 @@
+image_width: 1224
+image_height: 1024
+K:  [886.19107, 0.0, 610.57891, 0.0, 886.59163, 514.59271, 0.0, 0.0, 1.0]
+D:  [-0.315760, 0.104955, 0.000320, -0.000156, 0.000000]
+fisheye_distortion: False
+
+topic_image_param: /camera/left/image_mono
+topic_external_imu_param: /imu/data
+topic_external_pose_param: /gt/pose/image_mono
+get_orientation_from_imu: True
+use_external_extrinsic_rotation: True
+q_external : [0.503514601762111, -0.490039948171737, 0.501235002128579, 0.505071646055633] # quaternion q = [qx, qy, qz, qw]
+

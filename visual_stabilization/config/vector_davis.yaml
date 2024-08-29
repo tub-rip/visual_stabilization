@@ -1,0 +1,13 @@
+image_width: 640
+image_height: 480
+K:  [327.32749, 0.0, 304.97749, 0.0, 327.46184, 235.37621, 0.0, 0.0, 1.0]
+D:  [-0.031982, 0.041966, -0.000507, -0.001031, 0.000000]
+fisheye_distortion: False
+
+topic_event_param: /davis/left/events
+topic_external_imu_param: /imu/data
+topic_external_pose_param: /gt/pose/davis
+get_orientation_from_imu: True
+use_external_extrinsic_rotation: True
+q_external : [0.504976771506393, -0.493072336073115, 0.495251594160932, 0.506560944131540] # quaternion q = [qx, qy, qz, qw]
+

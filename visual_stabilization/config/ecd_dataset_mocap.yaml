@@ -1,0 +1,11 @@
+image_width: 240
+image_height: 180
+K:  [199.092366542, 0.0, 132.192071378, 0.0, 198.82882047 , 110.712660011, 0.0, 0.0, 1.0]
+D:  [-0.368436311798, 0.150947243557, -0.000296130534385, -0.000759431726241, 0.0]
+fisheye_distortion: False
+
+topic_event_param: /dvs/events
+topic_image_param: /dvs/image_raw
+topic_external_pose_param: /optitrack/davis
+get_orientation_from_imu: False
+use_external_extrinsic_rotation: False
