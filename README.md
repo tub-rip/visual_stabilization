@@ -1,8 +1,10 @@
-# On the Benefits of Visual Stabilization for Frame- and Event-based Perception
+# On the Benefits of Visual Stabilization for Frame- and Event-based Perception (RAL 2024, Honorable Mention)
 
 [![On the Benefits of Visual Stabilization for Frame- and Event-based Perception](docs/media/video_preview.png)](https://youtu.be/LAOztE-8FfY)
 
 This is the code for the journal paper [**On the Benefits of Visual Stabilization for Frame- and Event-based Perception**](https://doi.org/10.1109/lra.2024.3450290), by [Juan Pablo Rodríguez-Gómez](https://sites.google.com/view/juanpablorodriguezgomez), [José Ramiro Martínez-de Dios](https://grvc.us.es/jramiromartinezdedios/), [Aníbal Ollero](https://grvc.us.es/newweb/head-of-the-laboratory/), and [Guillermo Gallego](https://sites.google.com/view/guillermogallego), published at IEEE Robotics and Automation Letters.
+
+The paper received an [Honorable Mention](https://www.scienceofintelligence.de/team-of-researchers-led-by-sciois-guillermo-gallego-receive-ieee-honorable-mention-for-work-on-robot-vision-stabilization/) during the ICRA 2025 awards ceremony.
 
 The [PDF of the paper is available](https://arxiv.org/pdf/2408.15602). If you use this work in your research, please cite it as follows:
 
